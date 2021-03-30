@@ -1,0 +1,154 @@
+@media only screen and (max-width: 1024px){
+    .logo h1{
+        font-size: 20px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #mobial_nav{
+        display: flex;
+    }
+
+    #mbl_nav{
+        opacity: 1;
+    }
+
+    #mbl_nav a{
+        margin-left: 35px;
+    }
+    
+    #mobial_nav span .fa{
+        font-size: 25px;
+    }
+
+    .right_side img{
+        min-width: 280px;
+        height: auto;
+    }
+
+}
+
+@media only screen and (max-width: 968px){
+
+    .left_side h3{
+        font-size: 25px;
+    }
+
+    .left_side h3::after{
+        content: '';
+        width: 300px;
+        height: 2px;
+        position: absolute;
+        top: 70%;
+        left: 16%;
+        background-color: #000;
+    }
+
+    .left_side h1{
+        font-size: 50px;
+    }
+
+    .left_side h2{
+        font-size: 27px;
+    }
+
+    .right_side img{
+        min-width: 270px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .left_side h3{
+        font-size: 20px;
+    }
+
+    .left_side h3::after{
+        content: '';
+        width: 200px;
+        height: 2px;
+        position: absolute;
+        top: 70%;
+        left: 16%;
+        background-color: #000;
+    }
+
+    .left_side h1{
+        font-size: 37px;
+    }
+
+    .left_side h2{
+        font-size: 21px;
+    }
+
+    .right_side img{
+        min-width: 230px;
+        height: auto;
+    }
+
+    .left_side .contact_btn,
+    .left_side .follow_btn{
+        padding: 9px 17px;
+    }
+}
+
+@media only screen and (max-width: 665px){
+    
+    .logo{
+        padding-left: 30px;
+    }
+
+    .logo h1{
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+
+    .logo{
+        padding-left: 30px;
+    }
+
+    .logo h1{
+        font-size: 17px;
+    }
+
+    .left_side h3{
+        font-size: 16px;
+    }
+
+    .left_side h3::after{
+        content: '';
+        width: 150px;
+        height: 1px;
+        position: absolute;
+        top: 70%;
+        left: 16%;
+        background-color: #000;
+    }
+
+    .left_side h1{
+        font-size: 27px;
+    }
+
+    .left_side h2{
+        font-size: 17px;
+    }
+
+    .right_side img{
+        min-width: 150px;
+        height: auto;
+    }
+
+    .left_side .contact_btn,
+    .left_side .follow_btn{
+        display: block;
+        padding: 7px 14px;
+    }
+
+    .left_side .follow_btn{
+        margin-top: 15px;
+    }
+}

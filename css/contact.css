@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ecf0f3;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: url('images/contact.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav_section{
+    width: 100%;
+    height: 11vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    width: 40%;
+    color: #fff;
+    background-image: linear-gradient(#8d98e3 40%, #844fee 60%);
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+
+.logo h1{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-style: italic;
+    animation: leftright 2s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes leftright{
+    from{ padding-left: 40px; }
+    to{ padding-right: 40px; }
+}
+
+nav{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(41, 36, 36);
+    font-weight: 600;
+    font-size: 17px;
+    position: relative;
+}
+
+nav a:nth-child(4){
+    color: #4458dc;
+}
+
+nav a:before{
+    content: '';
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    border-bottom: 2px solid #000;
+    transition: all 0.4s linear;
+}
+
+nav a:hover:before{
+    width: 100%;
+}
+
+#waves{
+    position: relative;
+}
+
+.waves{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    right: 0;
+}
+
+/*Mobial nav*/
+
+#mobial_nav{
+    display: none;
+}
+
+#mobial_nav span .fa{
+    font-size: 25px;
+}
+
+/*form*/
+
+.contact{
+    position: relative;
+    margin: 50px 0px 0px 50px;
+    width: 500px;
+    height: 480px;
+    display: inline-block;
+    background: #ecf0f3;
+    border-radius: 20px;
+    box-shadow: 13px 13px 20px #cbced1,
+    -13px -13px 20px #fff;
+}
+
+.contact form h1{
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+    word-spacing: 9px;
+    margin-top: 5px;
+    color: #fff;
+    text-shadow: 13px 13px 20px #cbced1,
+    -13px -13px 20px #fff;
+}
+
+.contact .fform{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    margin-top: 9px;
+}
+
+.contact .fform input{
+    width: 47%;
+    padding: 7px 10px;
+    border: none;
+    font-size: 16px;
+    border-radius: 15px;
+    background: #fff;
+    color: #000;
+    outline: none;
+    box-shadow: 13px 13px 20px #cbced1,
+    -13px -13px 20px #fff;
+}
+
+.contact form input[type="email"],
+.contact form textarea{
+    width: 90%;
+    padding: 7px 10px;
+    border: none;
+    font-size: 16px;
+    margin-top: 30px;
+    border-radius: 15px;
+    background: #ecf0f3;
+    color: #000;
+    outline: none;
+    box-shadow: 13px 13px 20px #cbced1,
+    -13px -13px 20px #fff;
+}
+
+.contact form textarea{
+    margin-top: 35px;
+}
+
+.contact .lform,
+.contact .message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact form .send{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact form .send input{
+    width: 170px;
+    padding: 4px 20px;
+    margin-top: 39px;
+    font-size: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 13px 13px 20px #cbced1,
+    -13px -13px 20px #fff;
+    outline: none;
+}
+
+
+/*Footer*/
+
+footer{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.829);
+    color: #fff;
+}
+
+footer .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: #d80b59;
+}
